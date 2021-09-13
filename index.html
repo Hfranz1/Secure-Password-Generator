@@ -1,95 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/css/reset.css">
-    <link rel="stylesheet" href="./Assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <title>Laurel's Portfolio</title>
-</head>
-
-<!-- Begin Body -->
-<body>
-<!-- Begin Side Bar -->
-        <aside>
-            <img src="Assets/images/laurelheadshot.jpg" alt="Headshot of Laurel Thorburn" id="headshot">
-            <div id="name-style">Laurel Thorburn</div>
-            <nav class ="side-nav">
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="https://www.linkedin.com/in/laurel-thorburn-651592219/" target="_blank">LinkedIn</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
-            </nav>
-        </aside>
-<!-- Begin Main Body -->
-    <main>
-<!-- Begin About Me Section -->
-        <section class ="about-me">
-            <a name="about-me"><h1 class ="main-title">About Me</h1></a>
-             <h3 id="facts"> Audiologist 🦻 | Coder 🦸‍♀️ | Lover of Donuts 🍩 </h3>
-             <p>Coding has always been a love interest of mine, but it wasn't until recently that I finally decided to make a career change to pursue coding full time.  I have my docorate on audiology and pride myself of being a fast learner, strong team member, and independent learner. I thrive in fast-paced environments and am commited to being a life long learner. Are you looking to grow your team? <a href="#contact-me">Let's talk!</a></p>
-        </section>
-
-<!-- Begin Portfolio Section -->
-        <section class ="port-row justify-center">
-            <a name="portfolio"><h1 class ="main-title">Portfolio</h1></a>
-            <article class ="portbox-main">
-                <figure class="port-card">
-                <h2 class="port-h2">Portfolio</h2>
-                <img src="./Assets/images/adb9ca&text=IMAGE+HOLDER&font=kelson.png" alt ="Image Holder" class ="articleimg">
-                <p>Sample project text here if desired</p>
-            </figure>
-            </article>
-
-            <article class ="portbox">
-                <figure class="port-card">
-                    <h2 class="port-h2">Portfolio</h2>
-                 <img src="./Assets/images/adb9ca&text=IMAGE+HOLDER&font=kelson.png" alt ="Image Holder" class ="articleimg">
-                <p>Sample project text here if desired</p>
-                </figure>
-                </article>
-             <article class ="portbox">
-                <figure class="port-card">
-                 <h2 class="port-h2">Portfolio</h2>
-                 <img src="./Assets/images/adb9ca&text=IMAGE+HOLDER&font=kelson.png" alt ="Image Holder" class ="articleimg">
-                <p>Sample project text here if desired</p>
-                </figure>
-            </article>
-            <article class ="portbox">
-                <figure class="port-card">
-                 <h2 class="port-h2">Portfolio</h2>
-                 <img src="./Assets/images/adb9ca&text=IMAGE+HOLDER&font=kelson.png" alt ="Image Holder" class ="articleimg">
-                <p>Sample project text here if desired</p>
-                </figure>
-             </article>
-            <article class ="portbox">
-                <figure class="port-card">
-                 <h2 class="port-h2">Portfolio</h2>
-                 <img src="./Assets/images/adb9ca&text=IMAGE+HOLDER&font=kelson.png" alt ="Image Holder" class ="articleimg">
-                <p>Sample project text here if desired</p>
-                </figure>
-            </article>
-            <article class ="portbox">
-                <figure class="port-card">
-                 <h2 class="port-h2">Portfolio</h2>
-                 <img src="./Assets/images/adb9ca&text=IMAGE+HOLDER&font=kelson.png" alt ="Image Holder" class ="articleimg">
-                <p>Sample project text here if desired</p>
-                </figure>
-             </article>
-        </section>
-
-<!-- Begin Contact Me -->
-        <section class="contact-me">
-            <a name="contact-me"><h1 class ="main-title">Contact Me</h1></a>
-            <p>Coming Soon </p>
-            </section>
-    </main>
-
-    <footer>THIS IS THE FOOTER, why won't i obey my coder?!</footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
