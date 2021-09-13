@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  
 }
 
 html,
@@ -15,6 +16,7 @@ body,
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
+  text-align: center;
 }
 
 .wrapper {
