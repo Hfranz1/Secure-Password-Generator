@@ -34,7 +34,19 @@ function generatePassword() {
 if(useNumbers===true) {
   newPassword.push(getRandomCharacter(numbers));
   potentialCharacters=potentialCharacters.concat (numbers);
-}
+};
+if(upperCase===true) {
+  newPassword.push(getRandomCharacter(upperCase));
+  potentialCharacters=potentialCharacters.concat (upperCase);
+};
+if(useLowerCase===true) {
+  newPassword.push(getRandomCharacter(lowerCase));
+  potentialCharacters=potentialCharacters.concat (lowerCase);
+};
+if(useSpecialCharacter===true) {
+  newPassword.push(getRandomCharacter(specialCharacters));
+  potentialCharacters=potentialCharacters.concat (specialCharacters);
+};
 }
 
 // Write password to the #password input
