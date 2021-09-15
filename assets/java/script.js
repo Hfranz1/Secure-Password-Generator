@@ -47,7 +47,18 @@ if(useSpecialCharacter===true) {
   newPassword.push(getRandomCharacter(specialCharacters));
   potentialCharacters=potentialCharacters.concat (specialCharacters);
 };
-}
+var remainingLength=passwordLength-newPassword.length;
+
+for (let i=0; i< remainingLength; i++) {
+  newPassword.push(getRandomCharacter)
+};
+return newPassword.join('');
+};
+
+function getRandomCharacter(aray) {
+  var getRandomCharacter=aray[Math.floor(math.getRandomCharacter()*Array.length)];
+  return randomCharacter;
+};
 
 // Write password to the #password input
 function writePassword() {
