@@ -1,5 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var getRandom;
 
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -11,9 +12,7 @@ var minLength = 8;
 
 function generatePassword() {
   var newPassword = [];
-
   var potentialCharacters = [];
-
   var passwordLength = prompt("Please select a number between 8-128");
 
   if (passwordLength < 8 || passwordLength > 128 || passwordLength === NaN) {
@@ -31,33 +30,33 @@ function generatePassword() {
     return;
   };
 
-if(useNumbers===true) {
-  newPassword.push(getRandomCharacter(numbers));
-  potentialCharacters=potentialCharacters.concat (numbers);
-};
-if(upperCase===true) {
-  newPassword.push(getRandomCharacter(upperCase));
-  potentialCharacters=potentialCharacters.concat (upperCase);
-};
-if(useLowerCase===true) {
-  newPassword.push(getRandomCharacter(lowerCase));
-  potentialCharacters=potentialCharacters.concat (lowerCase);
-};
-if(useSpecialCharacter===true) {
-  newPassword.push(getRandomCharacter(specialCharacters));
-  potentialCharacters=potentialCharacters.concat (specialCharacters);
-};
-var remainingLength=passwordLength-newPassword.length;
+  if (useNumbers === true) {
+    newPassword.push(getRandomCharacter(numbers));
+    potentialCharacters = potentialCharacters.concat(numbers);
+  };
+  if (upperCase === true) {
+    newPassword.push(getRandomCharacter(upperCase));
+    potentialCharacters = potentialCharacters.concat(upperCase);
+  };
+  if (useLowerCase === true) {
+    newPassword.push(getRandomCharacter(lowerCase));
+    potentialCharacters = potentialCharacters.concat(lowerCase);
+  };
+  if (useSpecialCharacter === true) {
+    newPassword.push(getRandomCharacter(specialCharacters));
+    potentialCharacters = potentialCharacters.concat(specialCharacters);
+  };
+  var remainingLength = passwordLength - newPassword.length;
 
-for (let i=0; i< remainingLength; i++) {
-  newPassword.push(getRandomCharacter)
-};
-return newPassword.join('');
+  for (let i = 0; i < remainingLength; i++) {
+    newPassword.push(getRandomCharacter(potentialCharacters))
+  };
+  return newPassword.join('');
 };
 
-function getRandomCharacter(aray) {
-  var getRandomCharacter=aray[Math.floor(math.getRandomCharacter()*Array.length)];
-  return randomCharacter;
+function getRandomCharacter(arr) {
+  getRandomIndex = Math.floor(Math.random() * arr.length);
+  return getRandomIndex;
 };
 
 // Write password to the #password input
